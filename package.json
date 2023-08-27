@@ -1,0 +1,21 @@
+{
+  "name": "qr-ip",
+  "version": "1.0.0",
+  "description": "show the current ip adress and port as a qr code",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./dist/index.js"
+  },
+  "bin": {
+    "qrip": "./dist/index.js"
+  },
+  "author": "Javier Zamudio",
+  "license": "ISC",
+  "dependencies": {
+    "terminal-qr": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.6"
+  }
+}
