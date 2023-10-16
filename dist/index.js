@@ -17,7 +17,14 @@ for (const name of Object.keys(nets)) {
         }
     }
 }
-const ip = results['Wi-Fi'][0];
+let networkInterface = '';
+if (results['Wi-Fi']) {
+    networkInterface = 'Wi-Fi';
+}
+else if (results['Ethernet']) {
+    networkInterface = 'Ethernet';
+}
+const ip = results[networkInterface][0];
 const terminal_qr_1 = require("terminal-qr");
 function help() {
     console.log(`

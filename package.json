@@ -1,6 +1,6 @@
 {
   "name": "ip-qr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "show the current ip adress and port as a qr code",
   "main": "./dist/index.js",
   "scripts": {
